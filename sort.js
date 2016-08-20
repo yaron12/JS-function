@@ -6,20 +6,20 @@ function sort() {
 				var b = document.getElementById("n2").value;
 				var c = document.getElementById("n3").value;
 
-				if (a < b && a < c)
-					if (b < c)
+				if (a <= b && a <= c)
+					if (b <= c)
 						results = (a + ", " + b + ", " + c);
 					else
 						results = (a + ", " + c + ", " + b);
 				
-                    else if (b < a && b < c)
-					if (a < c)
+                    else if (b <= a && b <= c)
+					if (a <= c)
 						results = (b + ", " + a + ", " + c);
 					else
 						results = (b + ", " + c + ", " + a);
 				
-                    else if (c < a && c < b)
-					if (a < b)
+                    else if (c <= a && c <= b)
+					if (a <= b)
 						results = (c + ", " + a + ", " + b);
 					else
 						results = (c + ", " + b + ", " + a);
